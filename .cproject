@@ -31,6 +31,7 @@
 								<option id="de.innot.avreclipse.compiler.option.incpath.888606331" name="Include Paths (-I)" superClass="de.innot.avreclipse.compiler.option.incpath" valueType="includePath">
 									<listOptionValue builtIn="false" value="/Developer/Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/cores/arduino"/>
 									<listOptionValue builtIn="false" value="/Developer/Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/variants/standard"/>
+									<listOptionValue builtIn="false" value="/Developer/Applications/Arduino.app/Contents/Resources/Java/libraries/Wire"/>
 								</option>
 								<inputType id="de.innot.avreclipse.compiler.winavr.input.713595382" name="C Source Files" superClass="de.innot.avreclipse.compiler.winavr.input"/>
 							</tool>
@@ -40,6 +41,7 @@
 								<option id="de.innot.avreclipse.cppcompiler.option.incpath.4137512" name="Include Paths (-I)" superClass="de.innot.avreclipse.cppcompiler.option.incpath" valueType="includePath">
 									<listOptionValue builtIn="false" value="/Developer/Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/cores/arduino"/>
 									<listOptionValue builtIn="false" value="/Developer/Applications/Arduino.app/Contents/Resources/Java/hardware/arduino/variants/standard"/>
+									<listOptionValue builtIn="false" value="/Developer/Applications/Arduino.app/Contents/Resources/Java/libraries/Wire"/>
 								</option>
 								<inputType id="de.innot.avreclipse.cppcompiler.input.182147305" superClass="de.innot.avreclipse.cppcompiler.input"/>
 							</tool>
