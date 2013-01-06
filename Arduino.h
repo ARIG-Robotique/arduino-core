@@ -210,6 +210,12 @@ long map(long, long, long, long, long);
 
 #endif
 
-#include "pins_arduino.h"
+#ifdef __ARDUINO_STANDARD
+#include "pins_arduino-standard.h"
+#elif __ARDUINO_MEGA
+#include "pins_arduino-mega.h"
+#else
+#error Il faut définir une variable pour le type.
+#endif
 
 #endif

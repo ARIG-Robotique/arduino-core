@@ -26,7 +26,12 @@
 
 #define ARDUINO_MAIN
 #include "wiring_private.h"
-#include "pins_arduino.h"
+
+#ifdef __ARDUINO_STANDARD
+#include "pins_arduino-standard.h"
+#elif __ARDUINO_MEGA
+#include "pins_arduino-mega.h"
+#endif
 
 void pinMode(uint8_t pin, uint8_t mode)
 {

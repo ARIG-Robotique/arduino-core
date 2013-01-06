@@ -35,7 +35,12 @@
 #define sbi(sfr, bit) (_SFR_BYTE(sfr) |= _BV(bit))
 #endif
 
-#include "pins_arduino.h"
+#ifdef __ARDUINO_STANDARD
+#include "pins_arduino-standard.h"
+#elif __ARDUINO_MEGA
+#include "pins_arduino-mega.h"
+#endif
+
 #include "twi.h"
 
 static volatile uint8_t twi_state;

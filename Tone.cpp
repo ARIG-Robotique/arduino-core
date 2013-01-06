@@ -34,7 +34,12 @@ Version Modified By Date     Comments
 #include <avr/interrupt.h>
 #include <avr/pgmspace.h>
 #include "Arduino.h"
-#include "pins_arduino.h"
+
+#ifdef __ARDUINO_STANDARD
+#include "pins_arduino-standard.h"
+#elif __ARDUINO_MEGA
+#include "pins_arduino-mega.h"
+#endif
 
 #if defined(__AVR_ATmega8__) || defined(__AVR_ATmega128__)
 #define TCCR2A TCCR2

@@ -25,7 +25,12 @@
 */
 
 #include "wiring_private.h"
-#include "pins_arduino.h"
+
+#ifdef __ARDUINO_STANDARD
+#include "pins_arduino-standard.h"
+#elif __ARDUINO_MEGA
+#include "pins_arduino-mega.h"
+#endif
 
 uint8_t analog_reference = DEFAULT;
 
