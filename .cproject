@@ -179,6 +179,8 @@
 		</configuration>
 		<configuration configurationName="Release 8ANA"/>
 		<configuration configurationName="Release Standard">
+			<resource resourceType="PROJECT" workspacePath="/robot-system-lib"/>
+			<resource resourceType="PROJECT" workspacePath="/quadratic-reader"/>
 			<resource resourceType="PROJECT" workspacePath="/arduino-core"/>
 		</configuration>
 		<configuration configurationName="Release Mega">
