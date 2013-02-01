@@ -214,6 +214,12 @@ long map(long, long, long, long, long);
 #include "pins_arduino-standard.h"
 #elif __ARDUINO_MEGA
 #include "pins_arduino-mega.h"
+#elif __ARDUINO_8ANA
+#include "pins_arduino-eightanaloginputs.h"
+#elif __ARDUINO_LEONARDO
+#include "pins_arduino-leonardo.h"
+#elif __ARDUINO_MICRO
+#include "pins_arduino-micro.h"
 #else
 #error Il faut définir une variable pour le type.
 #endif

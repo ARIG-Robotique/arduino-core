@@ -30,6 +30,12 @@
 #include "pins_arduino-standard.h"
 #elif __ARDUINO_MEGA
 #include "pins_arduino-mega.h"
+#elif __ARDUINO_8ANA
+#include "pins_arduino-eightanaloginputs.h"
+#elif __ARDUINO_LEONARDO
+#include "pins_arduino-leonardo.h"
+#elif __ARDUINO_MICRO
+#include "pins_arduino-micro.h"
 #endif
 
 uint8_t analog_reference = DEFAULT;
