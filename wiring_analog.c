@@ -30,6 +30,12 @@
 #include "pins_arduino-standard.h"
 #elif __ARDUINO_MEGA
 #include "pins_arduino-mega.h"
+#elif __ARDUINO_8ANA
+#include "pins_arduino-eightanaloginputs.h"
+#elif __ARDUINO_LEONARDO
+#include "pins_arduino-leonardo.h"
+#elif __ARDUINO_MICRO
+#include "pins_arduino-micro.h"
 #endif
 
 uint8_t analog_reference = DEFAULT;
@@ -50,7 +56,7 @@ int analogRead(uint8_t pin)
 	if (pin >= 54) pin -= 54; // allow for channel or pin numbers
 #elif defined(__AVR_ATmega32U4__)
 	if (pin >= 18) pin -= 18; // allow for channel or pin numbers
-#elif defined(__AVR_ATmega1284__)
+#elif defined(__AVR_ATmega1284P__) || defined(__AVR_ATmega644P__)
 	if (pin >= 24) pin -= 24; // allow for channel or pin numbers
 #else
 	if (pin >= 14) pin -= 14; // allow for channel or pin numbers
