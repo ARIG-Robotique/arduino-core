@@ -1,5 +1,6 @@
 (c) Association ARIG.
 
-Projet contenant l'ensemble de la librairie Arduino standard pour réaliser le développement sous Eclipse.
+Projet contenant l'ensemble de la librairie Arduino pour réaliser le développement sous Eclipse.
+Les librairies Wire et Servo ont également été ajouté.
 
-Les sources Arduino provienne de la version 1.0.3
+Les sources Arduino provienne de la version 1.0.4

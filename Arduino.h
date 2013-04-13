@@ -221,7 +221,7 @@ long map(long, long, long, long, long);
 #elif __ARDUINO_MICRO
 #include "pins_arduino-micro.h"
 #else
-#error Il faut définir une variable pour le type.
+#error Il faut d√©finir une variable pour le type.
 #endif
 
 #endif
