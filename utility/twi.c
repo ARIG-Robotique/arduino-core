@@ -25,7 +25,7 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <compat/twi.h>
-#include "Arduino.h" // for digitalWrite
+#include "../Arduino.h" // for digitalWrite
 
 #ifndef cbi
 #define cbi(sfr, bit) (_SFR_BYTE(sfr) &= ~_BV(bit))
@@ -36,15 +36,15 @@
 #endif
 
 #ifdef __ARDUINO_STANDARD
-#include "pins_arduino-standard.h"
+#include "../pins_arduino-standard.h"
 #elif __ARDUINO_MEGA
-#include "pins_arduino-mega.h"
+#include "../pins_arduino-mega.h"
 #elif __ARDUINO_8ANA
-#include "pins_arduino-eightanaloginputs.h"
+#include "../pins_arduino-eightanaloginputs.h"
 #elif __ARDUINO_LEONARDO
-#include "pins_arduino-leonardo.h"
+#include "../pins_arduino-leonardo.h"
 #elif __ARDUINO_MICRO
-#include "pins_arduino-micro.h"
+#include "../pins_arduino-micro.h"
 #endif
 
 #include "twi.h"
@@ -371,7 +371,7 @@ void twi_releaseBus(void)
   twi_state = TWI_READY;
 }
 
-SIGNAL(TWI_vect)
+ISR(TWI_vect)
 {
   switch(TW_STATUS){
     // All Master

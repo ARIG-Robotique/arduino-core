@@ -1,6 +1,4 @@
-// SAMPLE FILE
-
-#include "Arduino.h"
+#include <Arduino.h>
 
 int main(void)
 {
