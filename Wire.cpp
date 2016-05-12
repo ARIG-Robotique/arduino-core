@@ -273,7 +273,7 @@ void TwoWire::onRequestService(void)
     return;
   }
   // reset tx buffer iterator vars
-  // !!! this will kill any pending pre-master sendTo() activity
+  // ! this will kill any pending pre-master sendTo() activity
   txBufferIndex = 0;
   txBufferLength = 0;
   // alert user program
